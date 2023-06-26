@@ -1,3 +1,5 @@
+Alunos: João Vitor Lembeck e Daniel Gelich.
+
 Ordem de execução:
 
  node generateKeys.js
