@@ -1,0 +1,15 @@
+{
+  "name": "n3_seguranca",
+  "version": "1.0.0",
+  "description": "",
+  "main": "decript.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "big-integer": "^1.6.51",
+    "fs": "^0.0.1-security"
+  }
+}
