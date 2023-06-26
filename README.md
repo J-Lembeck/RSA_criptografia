@@ -1,3 +1,10 @@
+Ordem de execução:
+
+ node generateKeys.js
+ node encripta.js public_key.txt text.txt criptografado.txt
+ node decripta.js private_key.txt criptografado.txt descriptografado.txt
+ 
+
 Para esta tarefa você deve implementar um par de programas para encriptar e decriptar arquivos texto usando o algoritmo de chaves públicas RSA. O objetivo desta tarefa é praticar a programação, implementando um algoritmo criptográfico, de forma a compreender melhor seu funcionamento.
 
 Esta descrição traz uma especificação detalhada do que você precisará fazer. Você deve trabalhar individualmente ou em duplas, mas você pode discutir seus algoritmos e suas ideias com seus colegas. Plágio não será aceito.
