@@ -19,7 +19,7 @@ function encrypt(publicKey, plaintext) {
     encryptedBlocks.push(encryptedBlock.toString());
   }
 
-  return encryptedBlocks.join(' ');
+  return encryptedBlocks.join('\n');
 }
 
 const publicKeyFile = process.argv[2];

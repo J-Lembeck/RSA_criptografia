@@ -11,14 +11,13 @@ function decryptFile(privateKey, inputFile, outputFile) {
 
 function decrypt(privateKey, encryptedText) {
   const { d, n } = privateKey;
-  const encryptedBlocks = encryptedText.split(' ');
+  const encryptedBlocks = encryptedText.split('\n');
   let decryptedText = '';
 
   for (let i = 0; i < encryptedBlocks.length; i++) {
     const encryptedBlock = bigInt(encryptedBlocks[i]);
     const decryptedBlock = encryptedBlock.modPow(d, n);
-    const charCode = decryptedBlock.toJSNumber();
-    decryptedText += String.fromCharCode(charCode);
+    decryptedText += String.fromCharCode(decryptedBlock.toString());
   }
 
   return decryptedText;
